@@ -256,7 +256,7 @@ main{
      padding-left: 40px;
     }
     .banner-section{
-    padding: 40px 20px;
+    padding: auto;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -280,6 +280,7 @@ main{
     .about-section{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .about-section{
