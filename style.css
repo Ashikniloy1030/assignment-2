@@ -17,25 +17,29 @@ body {
 /* Shared Style is here */
 .btn-gradian {
     color: white;
-    padding: 12px 20px;
+    padding: 15px 20px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 20px;
     border: none;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 234, 0));
+    background: linear-gradient(to right, rgb(57, 111, 13), rgb(255, 22, 169));
     cursor: pointer;  
+    align-items: center;
+    /* justify-content: center;
+    justify-items: center;
+    text-align: center; */
+    display: flex;
+    gap: 8px;
     /* -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
 }
 
 
 /* header all style  */
-.nav-bar .banner-section {
+.nav-bar .banner-section,.about-section {
     max-width: 1600px;
     margin: 0 auto;
     /* border: 20px solid black; */
-
-
 }
 
 .nav-container {
@@ -52,7 +56,7 @@ body {
 .nav-title {
     font-size: 3rem;
     font-weight: bold;
-    color: brown;
+    color: rgb(255, 255, 255);
 }
 
 .Wave {
@@ -79,18 +83,25 @@ body {
     line-height: 120%;
   
 }
+.hamburger{
+    display: none;
+}
 
 /* banner style */
 .banner-section{
     padding-top: 100px;
     padding-bottom: 100px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     background-color: #2A186C;
+    background-image: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   
 }
 .banner-container{
  
-    border: 1px solid rgb(245, 242, 242);
+    /* border: 1px solid rgb(245, 242, 242); */
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
@@ -98,16 +109,118 @@ body {
  
 }
 .banner-image{
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
+    /* margin-bottom: 42px; */
     padding: 150px;
     background-image: url("assets/hero-circle.png");
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     
 }
 .banner-image img{
-    max-width: 116px;
-    max-height: 175px;
-}
+    max-width: 150px;
+    max-height: 200px;
+    /* margin-bottom: 42px; */
     
+}
+.banner-container h1{
+    color: #FFFFFF;
+    font-size: 3.75rem;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+.banner-container p{
+    color: #8f8e8e;
+    margin-bottom: 24px;
+}
+.new-btn{
+    color: black;
+    font-size: 18px;
+    padding: 8px 18px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10000px;
+    box-shadow: 0px 0px 20px gold;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    cursor: pointer;
+    animation: new 1.2s infinite;
+}
+/* new-btn animation code  */
+
+@keyframes new {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+
+
+.two-btn{
+    /* border: 1px solid wheat; */
+    display: flex;
+    gap: 25px;
+}
+.btn-blank{
+    padding: 15px 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10000px;
+    border: 1px solid greenyellow;
+    background: none;
+    display: flex;
+    gap: 8px;
+}
 /* Main section's all style start here  */
+
+.about-section{
+    /* justify-items: center; */
+    text-align: center;
+}
+
+
+
+
+
+
+/* Responsive style here */
+@media screen and (max-width:576px) {
+    .nav-list-container, .btn-container {
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav-title {
+    font-size: 2rem;
+    }
+    .nav-container {
+     padding: 30px 30px;
+    }
+    .banner-section{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    }
+    .banner-container{
+    text-align: center;
+    max-width: 500px;
+   }
+   .banner-image img{
+    max-width: 70px;
+    max-height: 100px;
+    }
+    .banner-image{
+    padding: 140px;
+    }  
+}
