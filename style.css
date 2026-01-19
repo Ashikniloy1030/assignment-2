@@ -34,6 +34,10 @@ body {
     -webkit-background-clip: text; */
 }
 
+.grid-bg{
+    background-color: #35116540;
+}
+
 
 /* header all style  */
 .nav-bar .banner-section,.about-section {
@@ -235,7 +239,41 @@ main{
     line-height: 20px;
     color: #FFFFFF80;
 }
+/* this is grid section  */
+.grid-section{
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 120px;
+}
+.grid-section h3{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
 
+.grid-container h4{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.grid-container p{
+    color: #FFFFFF80;
+    font-size: 16px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1ftr);
+    grid-template-rows: repeat(3, auto);
+}
+#sidbar{
+    grid-row: span 2;
+}
 
 
 
