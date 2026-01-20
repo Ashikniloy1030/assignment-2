@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: #240b44;
     /* background-color: #1A0B2E; */
     /* background-color: rgb(55, 42, 42); */
 }
@@ -32,6 +33,16 @@ body {
     gap: 8px;
     /* -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
+}
+
+.btn-blank:hover {
+    background: linear-gradient(to right, rgb(182, 197, 170), rgb(237, 199, 6));
+    color: black;
+}
+
+.btn-gradian:hover {
+    color: #000000;
+    background: linear-gradient(to right, rgb(214, 214, 222), rgb(75, 6, 237));
 }
 
 .grid-bg {
@@ -492,15 +503,18 @@ main {
 .footer-section {
     max-width: 1600px;
     background-color: #240b44;
+    margin: 0 auto;
     padding: 120px;
-    /* margin: 0 auto; */
-    /* align-items: center; */
     text-align: center;
+    background-image: url("assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .div-container {
     margin: 0 auto;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
 }
 
 .footer-title {
@@ -527,7 +541,8 @@ main {
     margin-right: 10px;
 
 }
-.copy-right{
+
+.copy-right {
     color: #FFFFFF80;
 }
 
@@ -723,6 +738,10 @@ main {
     }
 
     /* this is host section responsive **********  */
+    .host-section {
+        padding-bottom: 50px;
+
+    }
 
     .host-section h3 {
         font-size: 2rem;
@@ -759,7 +778,18 @@ main {
         gap: 20px;
     }
 
+    /* footer responsive code */
+    .footer-section {
+        padding: 30px 120px 80px 120px;
+    }
 
+    .footer-icon {
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        gap: 25px;
+        margin-bottom: 10px;
+    }
 
 
 }
