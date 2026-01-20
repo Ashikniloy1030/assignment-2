@@ -58,7 +58,8 @@ body {
     background-color: #2A186C;
 }
 
-.nav-title {
+.nav-title,
+.footer-title {
     font-size: 3rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -347,6 +348,7 @@ main {
 }
 
 /* this si iframe section style */
+
 .iframe-section {
     max-width: 1600px;
     margin: 0 auto;
@@ -354,7 +356,7 @@ main {
     /* padding: 0px 200px; */
     text-align: center;
     /* margin-bottom: 200px; */
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
 }
 
@@ -376,13 +378,11 @@ main {
 }
 
 .iframe {
-    /* max-width: 100%;
-    max-height: 100%; */
     background-color: #35116540;
-    /* border: 1px solid red; */
     margin-bottom: 60px;
     border-radius: 20px;
     max-width: 380px;
+    padding: 5px;
 
 }
 
@@ -392,13 +392,14 @@ main {
 
 .iframe iframe {
     border-radius: 10px;
-    
+
 }
 
 .iframe h3 {
     color: #FFFFFF;
     font-weight: bold;
     margin-top: 24px;
+    font-size: 2rem;
     margin-bottom: 12px;
 }
 
@@ -411,9 +412,126 @@ main {
 }
 
 .iframe .time {
-    color: green;
+    color: rgb(14, 233, 14);
     margin-bottom: 30px;
 }
+
+/* host section style */
+.host-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* align-items: center; */
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.host-section h3 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.host-div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #35116540;
+    border-radius: 20px;
+    padding: 40px;
+    /* margin-bottom: 120px; */
+}
+
+.host-div .alex-photo {
+    margin-right: 24px;
+}
+
+.alex-details h4 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.alex-details p {
+    font-size: 1rem;
+    color: #FFFFFF80;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.alex-details {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-icon {
+    display: flex;
+    /* flex-direction: row; */
+    /* border: 1px solid white; */
+    gap: 20px;
+}
+
+.media-icon img {
+    padding: 10px;
+    border-radius: 50px;
+    border: .5px solid gold;
+    /* background-color: #2A186C; */
+    cursor: pointer;
+}
+
+.media-icon img:hover {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(6, 233, 78);
+}
+
+/* this is footer section */
+
+.footer-section {
+    max-width: 1600px;
+    background-color: #240b44;
+    padding: 120px;
+    /* margin: 0 auto; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.div-container {
+    margin: 0 auto;
+    border: 1px solid wheat;
+}
+
+.footer-title {
+    margin-bottom: 32px;
+    font-size: 3rem;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-icon a {
+    color: #FFFFFF;
+    font-size: 1rem;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-icon a img {
+    margin-right: 10px;
+
+}
+.copy-right{
+    color: #FFFFFF80;
+}
+
+
 
 
 /* Responsive style here */
@@ -571,6 +689,77 @@ main {
         grid-column: span 1;
         grid-row: span 1;
     }
+
+
+    /* iframe responsive code here */
+
+    .iframe-section h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+
+    }
+
+    .iframe-div {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .iframe h3 {
+        font-size: 1.2rem;
+
+    }
+
+    .iframe p {
+        font-weight: 500;
+        font-size: 12px;
+
+    }
+
+    .iframe .time {
+        margin-bottom: 20px;
+    }
+
+    /* this is host section responsive **********  */
+
+    .host-section h3 {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .host-div {
+        flex-direction: column;
+    }
+
+    .host-div .alex-photo {
+        margin-right: 0;
+    }
+
+    .alex-details h4 {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+        margin-top: 20px;
+    }
+
+    .alex-details p {
+        margin-bottom: 16px;
+    }
+
+    .alex-details {
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .media-icon {
+        display: flex;
+        gap: 20px;
+    }
+
+
 
 
 }
